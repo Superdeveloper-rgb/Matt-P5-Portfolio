@@ -106,9 +106,11 @@ function draw() {
   spawn++;
 
   // Draw logo on top
-  fill('rgba(0, 0, 0, 0.15)')
-  rect((width/2),(height/2), 300, 100)
-  image(img, (width/2)-(img.width/2), (height/2)-(img.height/2))
+  // fill('rgba(0, 0, 0, 0.15)')
+  // rect((width/2),(height/2), 300, 100)
+  image(img, 
+    (width/2)-(img.width/4)+(mouseX-img.width-width)/10, 
+    (height/2)-(img.height/4)+(mouseY-img.height-height)/10)
 }
 
 function mousePressed() {
