@@ -2,6 +2,11 @@ let rows = 20,
   columns = 20;
 let cars = [];
 let spawn = 0;
+let img;
+
+function preload(){
+  img = loadImage('/mattflix.png');
+}
 
 class Car {
   constructor(x, y) {
@@ -48,13 +53,14 @@ class Car {
     this.position();
   }
   paint() {
-    fill(224, 123, 206);
+    fill(205, 52, 120);
     noStroke();
     ellipse(this.x, this.y, 20, 20);
   }
 }
 
 function setup() {
+  //mattflix landing backdrop
   createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
   //stop grid flash
@@ -64,6 +70,8 @@ function setup() {
     let c = new Car(random(0, width), random(0, height));
     cars.push(c);
   }
+
+
 }
 
 function draw() {
@@ -98,6 +106,9 @@ function draw() {
   spawn++;
 
   // Draw logo on top
+  fill('rgba(0, 0, 0, 0.15)')
+  rect((width/2),(height/2), 300, 100)
+  image(img, (width/2)-(img.width/2), (height/2)-(img.height/2))
 }
 
 function mousePressed() {

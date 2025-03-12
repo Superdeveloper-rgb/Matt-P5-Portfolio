@@ -1,7 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 canvas {
   display: block;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, 0.679);
+}
+::-webkit-scrollbar-corner{
+  background-color: black;
 }
