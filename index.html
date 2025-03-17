@@ -3,15 +3,63 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
-
   </head>
   <body>
-    <main>
-    </main>
-    <section style="display: block;min-height: 500px;">
-
+    <main></main>
+    <section style="display: block; min-height: 500px">
+      <ul class="slider">
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+      </ul>
+      <ul class="slider">
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+      </ul>
+      <ul class="slider">
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+        <li class="clickCard"></li>
+      </ul>
+      <section class="largeFeature" style="margin-top: 80px">
+        <header class="contentCard">
+          <img src="https://picsum.photos/1920/1080" loading="lazy" />
+        </header>
+        <div class="textWrapper">
+          <h1 class="infotitle">Stompe!</h1>
+          <p class="description">Stomp preview</p>
+          <div class="links">
+            <a class="infoLink" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-info"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="8"></line>
+              </svg> </a
+            ><a class="watchLink" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  style="fill: white"
+                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </section>
     <script src="sketch.js"></script>
   </body>

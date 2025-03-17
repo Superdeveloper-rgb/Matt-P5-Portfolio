@@ -63,7 +63,7 @@ class Car {
 
 function setup() {
   //mattflix landing backdrop
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight - 300);
   rectMode(CENTER);
   //stop grid flash
   background(12);
@@ -97,7 +97,7 @@ function draw() {
     cars[i].paint();
     cars[i].position();
     if (floor(abs(cars[i].dx)) == 0 && floor(abs(cars[i].dy)) == 0) {
-      cars[i].moveCells(random(-3, 3), random(-3, 3));
+      cars[i].moveCells(random(-10, 10), random(-5, 5));
     }
   }
 
@@ -113,7 +113,10 @@ function draw() {
       (width/2)-(img.width/2)+(mouseX-img.width-width/2)/20, 
       (height/2)-(img.height/2)+(mouseY-img.height-height/2)/20)
   }
-
+  fill(255)
+  textSize(40)
+  text("Welcome to",(width/2)-(img.width/2)+(mouseX-img.width-width/2)/40, 
+  (height/2)-(img.height/2)+(mouseY-img.height-height/2)/20)
 }
 
 function mousePressed() {
