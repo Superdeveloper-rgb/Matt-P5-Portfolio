@@ -55,15 +55,15 @@ class Car {
     this.position();
   }
   paint() {
-    fill(205, 52, 120);
+    fill(205, 52, 120, 50);
     noStroke();
-    ellipse(this.x, this.y, height/rows);
+    ellipse(this.x, this.y, height/rows + 50);
   }
 }
 
 function setup() {
   //mattflix landing backdrop
-  createCanvas(windowWidth, windowHeight - 300);
+  createCanvas(windowWidth, windowHeight - 100);
   rectMode(CENTER);
   //stop grid flash
   background(12);
