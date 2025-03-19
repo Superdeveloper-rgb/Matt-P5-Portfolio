@@ -5,7 +5,7 @@ let spawn = 0;
 let img;
 
 function preload(){
-  img = loadImage('/mattflix.png');
+  img = loadImage('./mattflix.png');
 }
 
 class Car {
